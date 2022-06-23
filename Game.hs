@@ -41,7 +41,6 @@ instance Arena TyNat where
   type Question TyNat = ()
   type Value TyNat = Nat
 
-  enabling (Q _) (Val _) = True
-  enabling _ _ = False
+  enabling = undefined
 
   initial = Set.singleton (Q ())
